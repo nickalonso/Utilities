@@ -57,22 +57,3 @@ all_filenames = [i for i in glob.glob('*.{}'.format(extension))]
 # Write combined pandas df to csv
 combined_csv = pd.concat([pd.read_csv(f) for f in all_filenames ])
 combined_csv.to_csv("stores2020.csv", index=False, encoding='utf-8-sig')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
